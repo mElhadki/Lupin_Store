@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&subset=devanagari,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+/* #Primary
+================================================== */
+
+body{
+    font-family: 'Poppins', sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #212112;
+	background-color: #fff;
+}
+.cart-nav {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+  }
+  
+  .fa-shopping-cart {
+      
+      content: "\f07a";
+      color: black;
+      font-size: 25px;
+      text-decoration: none;
+  
+  }
+  .nav-cart-items {
+      background: #eac7cc;
+      border-radius: 2px;
+      color: #ffffff;
+      display: inline-block;
+      font-size: 10px;
+      height: 14px;
+      line-height: 13px;
+      margin-left: -10px;
+      margin-bottom: 5px;
+      min-width: 10px;
+      padding-left: 4px;
+      pointer-events: none;
+      vertical-align: top;
+      top: 15px;
+      text-shadow: 0 1px rgba(45, 60, 72, 0.1);
+  }
+  .nav-item .dropdown-menu {
+    transform: translate3d(0, 10px, 0);
+    visibility: hidden;
+    opacity: 0;
+	max-height: 0;
+    display: block;
+	padding: 0;
+	margin: 0;
+    transition: all 200ms linear;
+}
+.nav-item.show .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+	max-height: 999px;
+    transform: translate3d(0, 0px, 0);
+}
+.dropdown-menu {
+	padding: 10px!important;
+	margin: 0;
+	font-size: 13px;
+	letter-spacing: 1px;
+	color: #212121;
+	background-color: #fcfaff;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
+    transition: all 200ms linear;
+}
+.dropdown-toggle::after {
+	display: none;
+}
+
+.dropdown-item {
+	padding: 3px 15px;
+	color: #212121;
+	border-radius: 2px;
+    transition: all 200ms linear;
+}
+.dropdown-item:hover, 
+.dropdown-item:focus {
+	color: #fff;
+	background-color: rgba(129,103,169,.6);
+}
+
+
+/* #Navigation
+================================================== */
+
+.start-header {
+    opacity: 1;
+    transform: translateY(0);
+    padding: 20px 0;
+    box-shadow: 0 10px 30px 0 rgba(138, 155, 165, 0.15);
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .start-header.scroll-on {
+    box-shadow: 0 5px 10px 0 rgba(138, 155, 165, 0.15);
+    padding: 10px 0;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .start-header.scroll-on .navbar-brand img {
+    height: 24px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  .navigation-wrap {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+  }
+  
+  .navbar-brand img{
+      height: 28px;
+      width: auto;
+      display: block;
+      filter: brightness(10%);
+      transition : all 0.3s ease-out;
+  }
+  .navbar-toggler {
+      float: right;
+      border: none;
+      padding-right: 0;
+  }
+  .navbar-toggler:active,
+  .navbar-toggler:focus {
+      outline: none;
+  }
+  .navbar-light .navbar-toggler-icon {
+      width: 24px;
+      height: 17px;
+      background-image: none;
+      position: relative;
+      border-bottom: 1px solid #000;
+      transition: all 300ms linear;
+  }
+  .navbar-light .navbar-toggler-icon:after, 
+  .navbar-light .navbar-toggler-icon:before{
+      width: 24px;
+      position: absolute;
+      height: 1px;
+      background-color: #000;
+      top: 0;
+      left: 0;
+      content: '';
+      z-index: 2;
+      transition: all 300ms linear;
+  }
+  .navbar-light .navbar-toggler-icon:after{
+      top: 8px;
+  }
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:after {
+      transform: rotate(45deg);
+  }
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
+      transform: translateY(8px) rotate(-45deg);
+  }
+  .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
+      border-color: transparent;
+  }
+  
+  .nav-link{
+      color: #212121 !important;
+      font-weight: 500;
+  }
+  .nav-item:hover .nav-link{
+      color: #eac7cc !important;
+  }
+  .nav-item.active .nav-link{
+      color: #777 !important;
+  }
+  .nav-link {
+      position: relative;
+      padding: 5px 0 !important;
+      display: inline-block;
+  }
+  .nav-item:after{
+      position: absolute;
+      bottom: -5px;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      content: '';
+      background-color: #eac7cc;
+      opacity: 0;
+      transition: all 200ms linear;
+  }
+  .nav-item:hover:after{
+      bottom: 0;
+      opacity: 1;
+  }
+  .nav-item.active:hover:after{
+      opacity: 0;
+  }
+  .nav-item{
+      position: relative;  
+      text-align: center;
+  }
+  /* #Media
+================================================== */
+
+@media (max-width: 767px) { 
+	.nav-items{
+        text-align: center;
+    }
+	.nav-item:after{
+		display: none;
+	}
+	.nav-item::before {
+		position: absolute;
+		display: block;
+		top: 15px;
+		left: 0;
+        background-color: #000;
+        
+		
+    }
+    .dropdown-menu {
+       
+       border: None; 
+       text-align:center;
+    }
+}

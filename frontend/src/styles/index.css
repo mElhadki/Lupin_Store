@@ -1,0 +1,445 @@
+
+
+/* #Primary style
+================================================== */
+
+.bg-light {
+	background-color: #fff !important;
+    transition: all 200ms linear;
+}
+
+/* Slide */
+
+
+#myCarousel .carousel-item .mask {
+    position: absolute;
+    top: 0;
+	left:0;
+	height:100%;
+    width: 100%;
+    background-attachment: fixed;
+}
+.align-items-center {
+    
+    margin-top: 25px;
+}
+#myCarousel h4{
+	font-size:50px;
+	margin-bottom:15px;
+	color:#FFF;
+	line-height:100%;
+	letter-spacing:0.5px;
+	font-weight:600;
+}
+#myCarousel p{
+	font-size:18px;
+	margin-bottom:15px;
+	color:#d5d5d5;
+}
+.buy_now{
+    background:#eac7cc; 
+    font-size:14px; color:#FFF; 
+    padding:13px 32px; 
+    display:inline-block; 
+}
+
+.buy_now:hover{
+    background:white;
+    color: black; 
+    text-decoration:none;  }
+
+#myCarousel .carousel-item h4{ animation-name:fadeInLeft;} 
+#myCarousel .carousel-item p{animation-name:slideInRight;} 
+.buy_now{animation-name:fadeInUp;}
+#myCarousel .carousel-item .mask img{animation-name:slideInRight; 
+    display:block; 
+    height:auto; 
+    max-width:100%;}
+#myCarousel h4, #myCarousel p, .buy_now, #myCarousel .carousel-item .mask img{
+    animation-duration: 1.2s;
+   
+}
+#myCarousel .container {
+    max-width: 1430px;  
+                  }
+#myCarousel .carousel-item{
+    height:100%; 
+    min-height:750px; 
+}
+#myCarousel{
+    position:relative;
+    z-index:1; 
+    top: 100px;
+    /* Slide 
+    background:url(../assets/img/6axE29k.jpg) center center no-repeat; 
+    background-size:cover;*/   
+    background-color: black;
+
+}
+
+.carousel-item {
+    position: relative;
+    display: none;
+    align-items: center;
+    width: 100%;
+    transition: transform .6s ease;
+    transition: transform .6s ease;
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+ 
+  animation-name: fadeInUp;
+}
+
+
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInRight {
+ 
+  animation-name: slideInRight;
+}
+/* end Slide */
+
+/*********************************
+6. Ads
+*********************************/
+
+.avds
+{
+	width: 100%;
+    z-index: 2;
+    margin-top: 100px;
+}
+.avds_container
+{
+	
+	padding-left: 60px;
+	padding-right: 60px;
+}
+a:hover {
+     text-decoration: none; 
+}
+
+/* Ad Small*/
+
+.avds_small
+{
+	width: calc((100% * 0.391) - 15px);
+	height: 500px;
+	padding: 30px;
+}
+.avds_background
+{
+	padding: inherit;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.avds_small_inner
+{
+	width: 100%;
+	height: 100%;
+	border: solid 2px #FFFFFF;
+}
+.avds_discount_container
+{
+	position: absolute;
+	right: 36px;
+	bottom: 0;
+}
+.avds_discount_container > div
+{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.avds_discount
+{
+	position: absolute;
+	bottom: 71px;
+	right: 0;
+	width: 152px;
+	text-align: center;
+}
+.avds_discount div:first-child
+{
+	font-size: 60px;
+	font-weight: 700;
+	color: #1b1b1b;
+	line-height: 0.75;
+}
+.avds_discount div:first-child span
+{
+	font-size: 36px;
+	font-weight: 700;
+	vertical-align: super;
+}
+.avds_discount div:last-child
+{
+	font-size: 14px;
+	font-weight: 400;
+	color: #1b1b1b;
+	margin-top: 1px;
+}
+.avds_small_content
+{
+	max-width: 250px;
+	padding-top: 57px;
+	padding-left: 31px;
+	padding-right: 30px;
+}
+.avds_title
+{
+	font-size: 48px;
+	font-weight: 600;
+	color: #FFFFFF;
+	line-height: 1.16;
+}
+.avds_link
+{
+	margin-top: 18px;
+	padding-left: 4px;
+}
+.avds_link a
+{
+	position: relative;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+.avds_link a::after
+{
+	display: block;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	background: #FFFFFF;
+	content: '';
+}
+
+/* Ad Large */
+
+.avds_large
+{
+    width: calc((100% * 0.608) - 15px);
+    padding: 30px;
+	height: 500px;
+}
+.avds_large_container
+{
+	width: 100%;
+	height: 100%;
+	padding-top: 39px;
+	padding-left: 32px;
+	padding-bottom: 44px;
+}
+.avds_large_content
+{
+	max-width: 567px;
+	height: 100%;
+	background: rgba(0,0,0,0.63);
+	padding-right: 130px;
+	padding-left: 30px;
+	padding-top: 51px;
+	padding-bottom: 30px;
+}
+.avds_text
+{
+	font-size: 14px;
+	font-weight: 400;
+	color: #FFFFFF;
+	line-height: 2.14;
+	margin-top: 11px;
+	padding-left: 2px;
+}
+.avds_link_large
+{
+	margin-top: 40px;
+}
+
+/*********************************
+ Icon Boxes
+*********************************/
+
+.icon_boxes
+{
+	width: 100%;
+	padding-top: 99px;
+	padding-bottom: 99px;
+	background: #FFFFFF;
+	z-index: 2;
+}
+
+.icon_box
+{
+	width: 100%;
+	text-align: center;
+}
+.icon_box_image
+{
+	width: 75px;
+	height: 75px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.icon_box_image:hover
+{
+	color: black;
+}
+.icon_box_image img
+{
+	max-width: 100%;
+}
+.icon_box_title
+{
+	font-size: 18px;
+	font-weight: 500;
+	color: #1b1b1b;
+	margin-top: 33px;
+}
+.icon_box_text
+{
+	margin-top: 20px;
+}
+/*********************************
+8. Ad Extra Large
+*********************************/
+
+.avds_xl
+{
+	width: 100%;
+	background: #FFFFFF;
+	z-index: 2;
+}
+.avds_xl_container
+{
+	width: 100%;
+	height: 345px;
+	padding-top: 34px;
+	padding-right: 35px;
+	padding-bottom: 30px;
+	padding-left: 30px;
+}
+.avds_xl_background
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.avds_xl_content
+{
+	width: 391px;
+	height: 100%;
+	background: #eac7cc;
+	float: right;
+	padding-top: 28px;
+	padding-left: 42px;
+    padding-right: 30px;
+    position: relative;
+}
+.avds_xl_link
+{
+	margin-top: 18px;
+}
+
+
+/* #Media
+================================================== */
+
+@media (max-width: 767px) { 
+	
+    #myCarousel .carousel-item{
+    
+    min-height:770px; 
+}
+.align-items-center {
+    
+    margin-top: 0px;
+}
+.avds_container {
+    padding-left: 0px; 
+    padding-right: 0px; 
+}
+.avds_title {
+    font-size: 30px;
+    width: inherit;
+}
+.avds_text{
+  width: inherit;
+}
+.avds_small {
+    width: 100%;
+}
+.avds_large {
+     width:100%;
+    padding: 30px;
+    height: 500px;
+}
+.avds_large_container {
+    padding-left: 0px; 
+  
+}
+.avds_xl_content{
+    width: 100%;
+}
+
+footer{
+    text-align: center;
+    
+}
+.footer-social{
+    display: inline-block;
+}
+
+}
