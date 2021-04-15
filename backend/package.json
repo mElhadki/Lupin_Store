@@ -1,0 +1,31 @@
+{
+  "name": "api_ecom",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "GITSALAH",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "errorhandler": "^1.5.1",
+    "express": "^4.17.1",
+    "express-mongo-sanitize": "^2.0.2",
+    "express-rate-limit": "^5.2.6",
+    "generate-password": "^1.6.0",
+    "helmet": "^4.4.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.15",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.5.0",
+    "stripe": "^8.138.0",
+    "uniqid": "^5.3.0",
+    "util": "^0.12.3",
+    "validator": "^13.5.2",
+    "xss-clean": "^0.1.1"
+  }
+}
